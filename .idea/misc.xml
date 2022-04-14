@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Va40/app/src/main/res/drawable-v24/rd_blue.xml" value="0.1305" />
+        <entry key="..\:/Va40/app/src/main/res/drawable-v24/rd_btn.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable-v24/rd_green.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable/account_circle.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable/add.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable/edit.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable/rd_gray.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable/rd_gray_btn.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable/rd_yellow.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable/search.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/layout/abc.xml" value="0.36614583333333334" />
+        <entry key="..\:/Va40/app/src/main/res/layout/activity_dialog.xml" value="0.35688405797101447" />
+        <entry key="..\:/Va40/app/src/main/res/layout/activity_diolog.xml" value="0.5" />
+        <entry key="..\:/Va40/app/src/main/res/layout/activity_main.xml" value="0.3515625" />
+        <entry key="..\:/Va40/app/src/main/res/layout/activity_vamail.xml" value="0.358695652173913" />
+        <entry key="..\:/Va40/app/src/main/res/layout/activity_vapassport.xml" value="0.33" />
+        <entry key="..\:/Va40/app/src/main/res/layout/dialog.xml" value="0.5" />
+        <entry key="..\:/Va40/app/src/main/res/layout/dialog_item.xml" value="0.67" />
+        <entry key="..\:/Va40/app/src/main/res/layout/dose_recyclerview_item.xml" value="0.358695652173913" />
+        <entry key="..\:/Va40/app/src/main/res/layout/first_dose.xml" value="0.36614583333333334" />
+        <entry key="..\:/Va40/app/src/main/res/layout/fragment_first_dose.xml" value="0.36614583333333334" />
+        <entry key="..\:/Va40/app/src/main/res/layout/fragment_mainface1.xml" value="0.358695652173913" />
+        <entry key="..\:/Va40/app/src/main/res/layout/second_dose.xml" value="0.358695652173913" />
+        <entry key="..\:/Va40/app/src/main/res/layout/third_dose.xml" value="0.36614583333333334" />
+        <entry key="..\:/Va40/app/src/main/res/layout/vapassport.xml" value="0.358695652173913" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
