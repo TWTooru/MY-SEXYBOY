@@ -32,7 +32,7 @@ public class VAmail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       binding = ActivityVamailBinding.inflate(getLayoutInflater());
+        binding = ActivityVamailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         database = Room.databaseBuilder(VAmail.this,Database.class,"WorldHenDa")
                 .allowMainThreadQueries().build();
@@ -95,7 +95,6 @@ public class VAmail extends AppCompatActivity {
         binding.searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 liveData.removeObservers(VAmail.this);
                 liveData = database.getDao().select(binding.searchEdit.getText().toString());
                 liveData.observe(VAmail.this,new Observer<List<room>>() {

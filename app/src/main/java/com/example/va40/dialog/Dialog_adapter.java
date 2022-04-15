@@ -11,12 +11,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.va40.R;
 import com.example.va40.ROOM.Database;
 import com.example.va40.ROOM.VADao;
 import com.example.va40.ROOM.room;
+import com.example.va40.Viewmodel;
 
 
 import java.util.ArrayList;
@@ -27,7 +29,6 @@ public class Dialog_adapter extends RecyclerView.Adapter<Dialog_adapter.LinearVi
     private final Context ctx;
     private ArrayList<room> room =new ArrayList<>();
     public ArrayList<room> room_d =new ArrayList<>();
-
 
     public Dialog_adapter(Context context){
         this.ctx = context;
