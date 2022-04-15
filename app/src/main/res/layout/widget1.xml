@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/chevron_right" />
+            android:background="@drawable/chevron_right" />
     </LinearLayout>
 
     <LinearLayout
@@ -51,7 +51,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                app:srcCompat="@drawable/check_circle" />
+                android:adjustViewBounds="false"
+                android:background="@drawable/check_circle"
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -76,7 +78,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                app:srcCompat="@drawable/check_circle" />
+                android:background="@drawable/check_circle"
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -101,7 +104,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                app:srcCompat="@drawable/check_circle" />
+                android:background="@drawable/check_circle"
+                android:scaleType="fitCenter" />
 
             <TextView
                 android:id="@+id/textView16"

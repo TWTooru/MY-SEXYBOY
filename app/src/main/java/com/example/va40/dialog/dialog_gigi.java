@@ -1,5 +1,6 @@
 package com.example.va40.dialog;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
@@ -46,7 +47,7 @@ public class dialog_gigi extends DialogFragment {
                 .create();
         alertDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         Database database;
-        database = Room.databaseBuilder(dialog_gigi.this,Database.class,"ININ").allowMainThreadQueries().build();
+        database = Room.databaseBuilder(requireContext(),Database.class,"ININ").allowMainThreadQueries().build();
 
 
         if (room== null){
@@ -82,10 +83,17 @@ public class dialog_gigi extends DialogFragment {
             }
 
             binding.confirmBtn.setOnClickListener(new View.OnClickListener()    {
+                @SuppressLint("SetTextI18n")
                 @Override
                 public void onClick(View view) {
 
+
+                    binding.diaTitle.setText("");
+                    room.setCode(binding.localcode.getText().toString());
+                    room.setDate(binding.date.getText().toString());
+                    room.setTime(binding.time.getText().toString());
                     database.getDao().Update(room);
+                    dismiss();
                 }
             });
 
