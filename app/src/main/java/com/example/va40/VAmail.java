@@ -30,7 +30,7 @@ public class VAmail extends AppCompatActivity {
     Viewmodel viewmodel;
     Dialog_adapter dialog_adapter;
     LiveData liveData;
-
+    room room;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,7 +74,7 @@ public class VAmail extends AppCompatActivity {
         binding.addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dialog_gigi dialog_gigi = new dialog_gigi(viewmodel);
+                dialog_gigi dialog_gigi = new dialog_gigi(viewmodel,room);
                 dialog_gigi.show(getSupportFragmentManager(),"GIGI");
 
 

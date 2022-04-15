@@ -25,17 +25,17 @@ import com.example.va40.Viewmodel;
 
 
 import java.util.ArrayList;
-
+import java.util.List;
 
 
 public class Dialog_adapter extends RecyclerView.Adapter<Dialog_adapter.LinearViewHolder> {
     private final Context ctx;
     private ArrayList<room> room =new ArrayList<>();
     public ArrayList<room> room_d =new ArrayList<>();
-    private Database database;
-    private VADao dao;
+
     Viewmodel viewmodel;
     FragmentManager fragmentManager;
+
     public Dialog_adapter(Context context, Viewmodel viewmodel, FragmentManager fragmentManager){
         this.ctx = context;
         this.viewmodel = viewmodel;
@@ -76,11 +76,11 @@ public class Dialog_adapter extends RecyclerView.Adapter<Dialog_adapter.LinearVi
         holder.img_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            dialog_gigi dialog_gigi;
-            dialog_gigi = new dialog_gigi(viewmodel);
+
+                dialog_gigi dialog_gigi;
+                dialog_gigi = new dialog_gigi(viewmodel,room.get(position));
                 dialog_gigi.show(fragmentManager, "GIGI");
-                database = Room.databaseBuilder(ctx, Database.class, "GIGI").allowMainThreadQueries().build();
-                dao = database.getDao();
+
 
 
 
