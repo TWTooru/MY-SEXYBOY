@@ -26,6 +26,5 @@ public class Viewmodel extends AndroidViewModel {
         VADao vaDao;
         vaDao=database.getDao();
         vaDao.Insert(room);
-
     }
 }

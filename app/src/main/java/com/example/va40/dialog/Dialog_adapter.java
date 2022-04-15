@@ -11,13 +11,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.Room;
 
 import com.example.va40.R;
 import com.example.va40.ROOM.Database;
 import com.example.va40.ROOM.VADao;
 import com.example.va40.ROOM.room;
+import com.example.va40.VApassport;
 import com.example.va40.Viewmodel;
 
 
@@ -29,9 +32,14 @@ public class Dialog_adapter extends RecyclerView.Adapter<Dialog_adapter.LinearVi
     private final Context ctx;
     private ArrayList<room> room =new ArrayList<>();
     public ArrayList<room> room_d =new ArrayList<>();
-
-    public Dialog_adapter(Context context){
+    private Database database;
+    private VADao dao;
+    Viewmodel viewmodel;
+    FragmentManager fragmentManager;
+    public Dialog_adapter(Context context, Viewmodel viewmodel, FragmentManager fragmentManager){
         this.ctx = context;
+        this.viewmodel = viewmodel;
+        this.fragmentManager = fragmentManager;
     }
 
     @NonNull
@@ -68,6 +76,13 @@ public class Dialog_adapter extends RecyclerView.Adapter<Dialog_adapter.LinearVi
         holder.img_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+            dialog_gigi dialog_gigi;
+            dialog_gigi = new dialog_gigi(viewmodel);
+                dialog_gigi.show(fragmentManager, "GIGI");
+                database = Room.databaseBuilder(ctx, Database.class, "GIGI").allowMainThreadQueries().build();
+                dao = database.getDao();
+
+
 
             }
         });
@@ -80,7 +95,7 @@ public class Dialog_adapter extends RecyclerView.Adapter<Dialog_adapter.LinearVi
 
 
     static class LinearViewHolder extends RecyclerView.ViewHolder{
-        private TextView date,time,ampm,code;
+        private TextView date,time,ampm,code,title;
         private final ConstraintLayout checkbox;
         private final ImageView img_check;
         private  ImageView img_edit;
@@ -94,6 +109,7 @@ public class Dialog_adapter extends RecyclerView.Adapter<Dialog_adapter.LinearVi
             checkbox = itemView.findViewById(R.id.checkbox);
             img_edit = itemView.findViewById(R.id.img_edit);
             img_check = itemView.findViewById(R.id.img_check);
+            title = itemView.findViewById(R.id.dia_title);
         }
     }
     @SuppressLint("NotifyDataSetChanged")

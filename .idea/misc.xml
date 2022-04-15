@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Va40/app/src/main/res/drawable-nodpi/widget1.xml" value="0.2805" />
         <entry key="..\:/Va40/app/src/main/res/drawable-v24/rd_blue.xml" value="0.1305" />
         <entry key="..\:/Va40/app/src/main/res/drawable-v24/rd_btn.xml" value="0.2805" />
         <entry key="..\:/Va40/app/src/main/res/drawable-v24/rd_green.xml" value="0.2805" />
         <entry key="..\:/Va40/app/src/main/res/drawable/account_circle.xml" value="0.2805" />
         <entry key="..\:/Va40/app/src/main/res/drawable/add.xml" value="0.2805" />
+        <entry key="..\:/Va40/app/src/main/res/drawable/chevron_right.xml" value="0.2765" />
         <entry key="..\:/Va40/app/src/main/res/drawable/edit.xml" value="0.2805" />
         <entry key="..\:/Va40/app/src/main/res/drawable/rd_gray.xml" value="0.2805" />
         <entry key="..\:/Va40/app/src/main/res/drawable/rd_gray_btn.xml" value="0.2805" />
@@ -29,6 +31,7 @@
         <entry key="..\:/Va40/app/src/main/res/layout/second_dose.xml" value="0.358695652173913" />
         <entry key="..\:/Va40/app/src/main/res/layout/third_dose.xml" value="0.36614583333333334" />
         <entry key="..\:/Va40/app/src/main/res/layout/vapassport.xml" value="0.358695652173913" />
+        <entry key="..\:/Va40/app/src/main/res/layout/widget1.xml" value="0.25" />
       </map>
     </option>
   </component>

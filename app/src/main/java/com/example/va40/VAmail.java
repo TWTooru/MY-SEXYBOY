@@ -1,6 +1,7 @@
 package com.example.va40;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -29,6 +30,7 @@ public class VAmail extends AppCompatActivity {
     Viewmodel viewmodel;
     Dialog_adapter dialog_adapter;
     LiveData liveData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +44,7 @@ public class VAmail extends AppCompatActivity {
         vmback();add();delete();search();
 
 
-        dialog_adapter = new Dialog_adapter(VAmail.this);
+        dialog_adapter = new Dialog_adapter(VAmail.this,viewmodel, getSupportFragmentManager() );
         binding.vmRecyclerview.setAdapter(dialog_adapter);
         binding.vmRecyclerview.setLayoutManager(new LinearLayoutManager(this));
         viewmodel  = new ViewModelProvider(this).get(Viewmodel.class);
